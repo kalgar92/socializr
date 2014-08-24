@@ -1,0 +1,43 @@
+<div ng-controller="DeviantartCtrl">
+	<section id="subheader">
+		
+		<div class="wrapper">
+			<div class="deviantart">
+
+				<div class="col-1-2">
+					<h2>Mes dernières créations</h2>	
+				</div>
+				<div class="col-1-2">
+					<h3><a href="http://kalgar.deviantart.com">kalgar.deviantart.com</a></h3>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="content">
+
+		<div class="wrapper">
+			
+			<div ng-repeat="feed in feeds">
+				
+				<div class="content deviantart-content">
+
+					<div class="col-2-6">
+						<a ng-href="{{feed.link}}">
+							<img ng-src="{{feed.mediaGroups[0].contents[0].thumbnails[1].url}}"/></a>
+					</div>
+					<div class="col-4-6">
+						<a ng-href="{{feed.link}}">
+							<h4>{{feed.mediaGroups[0].contents[0].title}}</h4></a>
+						<p ng-bind-html="feed.mediaGroups[0].contents[0].description"></p>
+						<p>Type de travail : {{feed.mediaGroups[0].contents[0].categories[0].label}}</p>
+					</div>	
+
+				</div>
+			</div>
+		
+		</div>
+
+	</section>
+</div>

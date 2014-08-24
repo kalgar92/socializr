@@ -1,0 +1,336 @@
+/**
+*	Librairies
+*/
+$darkBlue: #11171c;
+$white: #FFF;
+
+/* Réseaux sociaux */
+$steam: #000000;
+$deviantart: #4B5D50;
+$github: #4183C4;
+$facebook: #3B5998;
+$pinterest: #CB2027;
+$twitch: #6441A5;
+$grooveshark: #FF6600;
+$tumblr: #2C4762;
+
+@import "compass/css3/box-shadow";
+
+
+
+
+/**
+*	Resets
+*/
+body, h1, h2 {
+	padding:0; margin: 0; 
+	font-family: Arial;
+}
+
+/**
+*	Layout
+*/
+#topbar {
+
+	background: $darkBlue;
+	color:$white;
+	padding: 24px;
+	overflow: auto;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+	-webkit-box-shadow: 0px 0px 10px 0px #000; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+	box-shadow: 0px 0px 10px 0px #000;
+
+	#description {
+
+		width:400px;
+		float: left;
+	
+
+		img {
+			float: left;
+		}
+		h1, h2 {
+			text-align: center;
+		}
+		h1{
+			color: $white;
+			font-size: 2.4em;
+			margin-top: 36px;
+			margin-bottom: 12px;
+		}
+	}
+
+	#navigation {
+
+		/*background: green;*/
+		width: 560px;
+		float: left;
+
+		#social {
+			margin-top: 30px;
+			margin-left: 80px;
+		}
+
+
+		li {
+			list-style: none;
+		
+			a {
+				float: left;
+				transition:background;
+				transition-duration:0.3s;
+				height: 64px;
+				margin-right: 2px;
+			}
+
+			a.steam {background: $steam}
+			a.deviantart {background: $deviantart}
+			a.github {background: $github}
+			a.pinterest {background: $pinterest}
+			a.facebook {background: $facebook}
+			a.grooveshark {background: $grooveshark}
+			a.twitch {background: $twitch}
+			a.tumblr {background: $tumblr}
+			a.grooveshark {background: $grooveshark}
+
+		}
+	}
+}
+#subheader {
+	overflow: auto;
+	padding-bottom: 10px;
+	margin-bottom: 12px;
+	padding-top: 70px;
+
+	.pinterest, .deviantart, .tumblr, .facebook, .github, .grooveshark, .twitch {
+		overflow: auto;
+	}
+
+	.pinterest {border-bottom:3px solid $pinterest}
+	.deviantart {border-bottom:3px solid $deviantart}
+	.tumblr {border-bottom:3px solid $tumblr}
+	.facebook {border-bottom:3px solid $facebook}
+	.github {border-bottom:3px solid $github}
+	.grooveshark {border-bottom:3px solid $grooveshark}
+	.twitch {border-bottom:3px solid $twitch}
+}
+
+#content {
+	z-index: -9999px;
+	padding-bottom: 70px;
+}
+
+/* Social specific content style */
+.content {
+	display: block;
+	overflow: auto;
+
+	h4 {
+			}
+
+	p {
+		font-size: 1.2em;
+	}
+
+}
+
+.deviantart-content {
+	h4, p {
+		margin-left: 10px;
+	}
+	margin-bottom:36px;
+}
+.facebook-content {
+	
+	border-top: 1px solid $facebook;
+	padding: 12px;
+	display: block;
+	float: left;
+	width: 40%;
+	margin:20px;
+	margin-top: 0;
+	margin-bottom: 0;
+	transition:background;
+	transition-duration:0.5s;
+
+	&:hover {
+		background: #f0f0f0;
+	}
+
+	a {
+		color:$facebook;
+	}
+}
+
+.github-content {
+
+	border-top: 1px solid $github;
+	padding-bottom:18px;
+	padding-left:18px;
+	transition:background;
+	transition-duration:0.5s;
+	
+	a {
+		color:$github;
+	}
+
+	img {
+		display: none;
+	}
+
+	&:hover {
+		background: #f0f0f0;
+	}
+}
+
+.twitch-content {
+
+	width: 100%;
+	display: block;
+	overflow: auto;
+	margin-bottom: 24px;
+
+	h4, p {
+		margin-left:18px;
+	}
+}
+
+.pinterest-content {
+	
+	border-top: 1px solid $pinterest;
+	transition:background;
+	transition-duration:0.5s;
+	padding-bottom: 18px;
+	
+	&:hover {
+		background: #f0f0f0;
+	}
+	img {
+		float: left;
+		margin-right: 18px;
+	}
+	a {
+		color:#000;
+	}
+}
+
+
+
+
+#footer {
+	height: 80px;
+	background: #222;
+	display: block;
+	float: left;
+	width: 100%;
+
+	p {
+		margin-top: 12px;
+		text-align: center;
+		color: #666;
+		line-height: 30px;
+	}
+}
+/**
+*	Layout utils
+*/
+html, body {
+	height: 100%;
+}
+.wrapper {
+	width:960px;
+	margin: auto;
+}
+.page-wrap {
+	min-height: 100%;
+	margin-bottom: -80px;
+	display: block;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.page-wrap:after {
+	height: 80px;
+}
+.col-1-2 {
+	width: 50%;
+	float: left;
+	display: block;
+}
+.col-2-6 {
+	width: 33%;
+	float: left;
+	display: block;
+}
+.col-4-6 {
+	width: 66%;
+	float: left;
+	display: block;
+}
+.col-1-8 {
+	width: 12.5%;
+	float: left;
+	display: block;
+}
+.col-7-8 {
+	width: 87.5%;
+	float: left;
+	display: block;
+}
+
+/**
+*	Typo
+*/
+h1, h2, h4 {
+	font-family: 'Ruluko';
+}
+h2 {
+	margin-top: 25px;
+	font-size: 2em;
+}
+h3 {
+	text-align: right;
+	margin-top: 30px;
+	font-weight: normal;
+}
+h4 {
+	color:#000;
+	margin-top:0px;
+	margin-bottom: 24px;
+	font-size: 1.8em;
+
+}
+a {
+	text-decoration: none;
+	color:#AAA;
+}
+p {
+	font-size: 1.2em;
+}
+
+.steam h2 {color: $steam}
+.deviantart h2 {color: $deviantart}
+.github h2 {color: $github}
+.pinterest h2 {color: $pinterest}
+.facebook h2 {color: $facebook}
+.grooveshark h2 {color: $grooveshark}
+.twitch h2 {color: $twitch}
+.tumblr h2 {color: $tumblr}
+.grooveshark h2 {color: $grooveshark}
+
+
+/* Tweaks pinterest */
+span img {
+	max-height: 250px;
+}
+span {
+	margin-right:3px;
+	margin-bottom:18px;
+}
+span span {
+	margin-right:0px;
+	margin-bottom:0px;
+}
