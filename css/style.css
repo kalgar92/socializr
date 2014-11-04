@@ -2,7 +2,7 @@
 /**
 *	Librairies
 */
-/* Réseaux sociaux */
+/* R├®seaux sociaux */
 /**
 *	Resets
 */
@@ -19,7 +19,7 @@ body, h1, h2 {
 /* line 33, ../scss/style.scss */
 #topbar {
   background: #11171c;
-  color: white;
+  color: #FFF;
   padding: 24px;
   overflow: auto;
   position: fixed;
@@ -44,7 +44,7 @@ body, h1, h2 {
 }
 /* line 57, ../scss/style.scss */
 #topbar #description h1 {
-  color: white;
+  color: #FFF;
   font-size: 2.4em;
   margin-top: 36px;
   margin-bottom: 12px;
@@ -74,39 +74,39 @@ body, h1, h2 {
 }
 /* line 88, ../scss/style.scss */
 #topbar #navigation li a.steam {
-  background: black;
+  background: #000000;
 }
 /* line 89, ../scss/style.scss */
 #topbar #navigation li a.deviantart {
-  background: #4b5d50;
+  background: #4B5D50;
 }
 /* line 90, ../scss/style.scss */
 #topbar #navigation li a.github {
-  background: #4183c4;
+  background: #4183C4;
 }
 /* line 91, ../scss/style.scss */
 #topbar #navigation li a.pinterest {
-  background: #cb2027;
+  background: #CB2027;
 }
 /* line 92, ../scss/style.scss */
 #topbar #navigation li a.facebook {
-  background: #3b5998;
+  background: #3B5998;
 }
 /* line 93, ../scss/style.scss */
 #topbar #navigation li a.grooveshark {
-  background: #ff6600;
+  background: #FF6600;
 }
 /* line 94, ../scss/style.scss */
 #topbar #navigation li a.twitch {
-  background: #6441a5;
+  background: #6441A5;
 }
 /* line 95, ../scss/style.scss */
 #topbar #navigation li a.tumblr {
-  background: #2c4762;
+  background: #2C4762;
 }
 /* line 96, ../scss/style.scss */
 #topbar #navigation li a.grooveshark {
-  background: #ff6600;
+  background: #FF6600;
 }
 
 /* line 101, ../scss/style.scss */
@@ -122,31 +122,31 @@ body, h1, h2 {
 }
 /* line 111, ../scss/style.scss */
 #subheader .pinterest {
-  border-bottom: 3px solid #cb2027;
+  border-bottom: 3px solid #CB2027;
 }
 /* line 112, ../scss/style.scss */
 #subheader .deviantart {
-  border-bottom: 3px solid #4b5d50;
+  border-bottom: 3px solid #4B5D50;
 }
 /* line 113, ../scss/style.scss */
 #subheader .tumblr {
-  border-bottom: 3px solid #2c4762;
+  border-bottom: 3px solid #2C4762;
 }
 /* line 114, ../scss/style.scss */
 #subheader .facebook {
-  border-bottom: 3px solid #3b5998;
+  border-bottom: 3px solid #3B5998;
 }
 /* line 115, ../scss/style.scss */
 #subheader .github {
-  border-bottom: 3px solid #4183c4;
+  border-bottom: 3px solid #4183C4;
 }
 /* line 116, ../scss/style.scss */
 #subheader .grooveshark {
-  border-bottom: 3px solid #ff6600;
+  border-bottom: 3px solid #FF6600;
 }
 /* line 117, ../scss/style.scss */
 #subheader .twitch {
-  border-bottom: 3px solid #6441a5;
+  border-bottom: 3px solid #6441A5;
 }
 
 /* line 120, ../scss/style.scss */
@@ -161,23 +161,19 @@ body, h1, h2 {
   display: block;
   overflow: auto;
 }
-/* line 133, ../scss/style.scss */
-.content p {
-  font-size: 1.2em;
-}
 
-/* line 139, ../scss/style.scss */
+/* line 131, ../scss/style.scss */
 .deviantart-content {
   margin-bottom: 36px;
 }
-/* line 140, ../scss/style.scss */
+/* line 132, ../scss/style.scss */
 .deviantart-content h4, .deviantart-content p {
   margin-left: 10px;
 }
 
-/* line 145, ../scss/style.scss */
+/* line 137, ../scss/style.scss */
 .facebook-content {
-  border-top: 1px solid #3b5998;
+  border-top: 1px solid #3B5998;
   padding: 12px;
   display: block;
   float: left;
@@ -188,70 +184,70 @@ body, h1, h2 {
   transition: background;
   transition-duration: 0.5s;
 }
-/* line 158, ../scss/style.scss */
+/* line 150, ../scss/style.scss */
 .facebook-content:hover {
   background: #f0f0f0;
 }
-/* line 162, ../scss/style.scss */
+/* line 154, ../scss/style.scss */
 .facebook-content a {
-  color: #3b5998;
+  color: #3B5998;
 }
 
-/* line 167, ../scss/style.scss */
+/* line 159, ../scss/style.scss */
 .github-content {
-  border-top: 1px solid #4183c4;
+  border-top: 1px solid #4183C4;
   padding-bottom: 18px;
   padding-left: 18px;
   transition: background;
   transition-duration: 0.5s;
 }
-/* line 175, ../scss/style.scss */
+/* line 167, ../scss/style.scss */
 .github-content a {
-  color: #4183c4;
+  color: #4183C4;
 }
-/* line 179, ../scss/style.scss */
+/* line 171, ../scss/style.scss */
 .github-content img {
   display: none;
 }
-/* line 183, ../scss/style.scss */
+/* line 175, ../scss/style.scss */
 .github-content:hover {
   background: #f0f0f0;
 }
 
-/* line 188, ../scss/style.scss */
+/* line 180, ../scss/style.scss */
 .twitch-content {
   width: 100%;
   display: block;
   overflow: auto;
   margin-bottom: 24px;
 }
-/* line 195, ../scss/style.scss */
+/* line 187, ../scss/style.scss */
 .twitch-content h4, .twitch-content p {
   margin-left: 18px;
 }
 
-/* line 200, ../scss/style.scss */
+/* line 192, ../scss/style.scss */
 .pinterest-content {
-  border-top: 1px solid #cb2027;
+  border-top: 1px solid #CB2027;
   transition: background;
   transition-duration: 0.5s;
   padding-bottom: 18px;
 }
-/* line 207, ../scss/style.scss */
+/* line 199, ../scss/style.scss */
 .pinterest-content:hover {
   background: #f0f0f0;
 }
-/* line 210, ../scss/style.scss */
+/* line 202, ../scss/style.scss */
 .pinterest-content img {
   float: left;
   margin-right: 18px;
 }
-/* line 214, ../scss/style.scss */
+/* line 206, ../scss/style.scss */
 .pinterest-content a {
   color: #000;
 }
 
-/* line 222, ../scss/style.scss */
+/* line 214, ../scss/style.scss */
 #footer {
   height: 80px;
   background: #222;
@@ -259,7 +255,7 @@ body, h1, h2 {
   float: left;
   width: 100%;
 }
-/* line 229, ../scss/style.scss */
+/* line 221, ../scss/style.scss */
 #footer p {
   margin-top: 12px;
   text-align: center;
@@ -270,64 +266,64 @@ body, h1, h2 {
 /**
 *	Layout utils
 */
-/* line 239, ../scss/style.scss */
+/* line 231, ../scss/style.scss */
 html, body {
   height: 100%;
 }
 
-/* line 242, ../scss/style.scss */
+/* line 234, ../scss/style.scss */
 .wrapper {
   width: 960px;
   margin: auto;
 }
 
-/* line 246, ../scss/style.scss */
+/* line 238, ../scss/style.scss */
 .page-wrap {
   min-height: 100%;
   margin-bottom: -80px;
   display: block;
 }
 
-/* line 251, ../scss/style.scss */
+/* line 243, ../scss/style.scss */
 .page-wrap:after {
   content: "";
   display: block;
 }
 
-/* line 255, ../scss/style.scss */
+/* line 247, ../scss/style.scss */
 .page-wrap:after {
   height: 80px;
 }
 
-/* line 258, ../scss/style.scss */
+/* line 250, ../scss/style.scss */
 .col-1-2 {
   width: 50%;
   float: left;
   display: block;
 }
 
-/* line 263, ../scss/style.scss */
+/* line 255, ../scss/style.scss */
 .col-2-6 {
   width: 33%;
   float: left;
   display: block;
 }
 
-/* line 268, ../scss/style.scss */
+/* line 260, ../scss/style.scss */
 .col-4-6 {
   width: 66%;
   float: left;
   display: block;
 }
 
-/* line 273, ../scss/style.scss */
+/* line 265, ../scss/style.scss */
 .col-1-8 {
   width: 12.5%;
   float: left;
   display: block;
 }
 
-/* line 278, ../scss/style.scss */
+/* line 270, ../scss/style.scss */
 .col-7-8 {
   width: 87.5%;
   float: left;
@@ -337,25 +333,29 @@ html, body {
 /**
 *	Typo
 */
-/* line 287, ../scss/style.scss */
+/* line 279, ../scss/style.scss */
 h1, h2, h4 {
   font-family: 'Ruluko';
 }
 
-/* line 290, ../scss/style.scss */
+/* line 282, ../scss/style.scss */
 h2 {
   margin-top: 25px;
   font-size: 2em;
 }
 
-/* line 294, ../scss/style.scss */
+/* line 286, ../scss/style.scss */
 h3 {
-  text-align: right;
   margin-top: 30px;
   font-weight: normal;
 }
 
-/* line 299, ../scss/style.scss */
+/* line 290, ../scss/style.scss */
+#subheader h3 {
+  float: right;
+}
+
+/* line 294, ../scss/style.scss */
 h4 {
   color: #000;
   margin-top: 0px;
@@ -363,75 +363,75 @@ h4 {
   font-size: 1.8em;
 }
 
-/* line 306, ../scss/style.scss */
+/* line 301, ../scss/style.scss */
 a {
   text-decoration: none;
   color: #AAA;
 }
 
-/* line 310, ../scss/style.scss */
+/* line 305, ../scss/style.scss */
 p {
-  font-size: 1.2em;
+  font-size: 1em;
+}
+
+/* line 309, ../scss/style.scss */
+.steam h2 {
+  color: #000000;
+}
+
+/* line 310, ../scss/style.scss */
+.deviantart h2 {
+  color: #4B5D50;
+}
+
+/* line 311, ../scss/style.scss */
+.github h2 {
+  color: #4183C4;
+}
+
+/* line 312, ../scss/style.scss */
+.pinterest h2 {
+  color: #CB2027;
+}
+
+/* line 313, ../scss/style.scss */
+.facebook h2 {
+  color: #3B5998;
 }
 
 /* line 314, ../scss/style.scss */
-.steam h2 {
-  color: black;
+.grooveshark h2 {
+  color: #FF6600;
 }
 
 /* line 315, ../scss/style.scss */
-.deviantart h2 {
-  color: #4b5d50;
+.twitch h2 {
+  color: #6441A5;
 }
 
 /* line 316, ../scss/style.scss */
-.github h2 {
-  color: #4183c4;
+.tumblr h2 {
+  color: #2C4762;
 }
 
 /* line 317, ../scss/style.scss */
-.pinterest h2 {
-  color: #cb2027;
-}
-
-/* line 318, ../scss/style.scss */
-.facebook h2 {
-  color: #3b5998;
-}
-
-/* line 319, ../scss/style.scss */
 .grooveshark h2 {
-  color: #ff6600;
-}
-
-/* line 320, ../scss/style.scss */
-.twitch h2 {
-  color: #6441a5;
-}
-
-/* line 321, ../scss/style.scss */
-.tumblr h2 {
-  color: #2c4762;
-}
-
-/* line 322, ../scss/style.scss */
-.grooveshark h2 {
-  color: #ff6600;
+  color: #FF6600;
 }
 
 /* Tweaks pinterest */
-/* line 326, ../scss/style.scss */
+/* line 321, ../scss/style.scss */
 span img {
   max-height: 250px;
 }
 
-/* line 329, ../scss/style.scss */
+/* line 324, ../scss/style.scss */
 span {
   margin-right: 3px;
   margin-bottom: 18px;
 }
 
-/* line 333, ../scss/style.scss */
+/* line 328, ../scss/style.scss */
 span span {
   margin-right: 0px;
   margin-bottom: 0px;

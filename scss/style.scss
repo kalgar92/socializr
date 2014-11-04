@@ -126,14 +126,6 @@ body, h1, h2 {
 .content {
 	display: block;
 	overflow: auto;
-
-	h4 {
-			}
-
-	p {
-		font-size: 1.2em;
-	}
-
 }
 
 .deviantart-content {
@@ -292,10 +284,13 @@ h2 {
 	font-size: 2em;
 }
 h3 {
-	text-align: right;
 	margin-top: 30px;
 	font-weight: normal;
 }
+#subheader h3 {
+	float: right;
+}
+
 h4 {
 	color:#000;
 	margin-top:0px;
@@ -308,7 +303,7 @@ a {
 	color:#AAA;
 }
 p {
-	font-size: 1.2em;
+	font-size: 1em;
 }
 
 .steam h2 {color: $steam}
