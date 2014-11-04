@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalgar's dashboard !</title>
+	<meta charset="utf-8">
+	
+	<!-- CSS  -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Ruluko' rel='stylesheet' type='text/css'>
+	
+	<!-- JS -->
+	<script src="vendor/angular/angular.js"></script>
+	<script src="vendor/angular-route/angular-route.min.js"></script>
+	<script src="vendor/angular-sanitize/angular-sanitize.min.js"></script>
+
+	<!-- ANGULAR -->
+	<script src="js/app.js"></script>
+	<script src="js/appRoutes.js"></script>
+
+</head>
+
+<body ng-app="KalgarNet">
+
+<div class="page-wrap">
+<section id="topbar">
+
+	<a href="https://github.com/kalgar92/socializr"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/c6625ac1f3ee0a12250227cf83ce904423abf351/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png"></a>
+
+	<div class="wrapper">
+		<div id="description">
+			<a href="/">
+				<img src="images/logo.png" alt="Kalgar" class="portfolio-image">
+				<h1>Kalgar.net</h1>
+			</a>
+		</div>
+		<div id="navigation">
+			<nav id="social">
+				<li><a href="/deviantart" class="deviantart"><img src="images/deviantart-64.png" alt="Deviantart"></a></li>
+				<li><a href="/tumblr" class="tumblr"><img src="images/tumblr-64.png" alt="Tumblr"></a></li>
+				<li><a href="/facebook" class="facebook"><img src="images/facebook-64.png" alt="facebook"></a></li>
+				<li><a href="/github" class="github"><img src="images/github-64.png" alt="github"></a></li>
+				<li><a href="/twitch" class="twitch"><img src="images/twitch-64.png" alt="twitch"></a></li>
+				<li><a href="/pinterest" class="pinterest"><img src="images/pinterest-64.png" alt="pinterest"></a></li>
+				<li><a href="/grooveshark" class="grooveshark"><img src="images/grooveshark-64.png" alt="grooveshark"></a></li>
+				<!-- <li><a href="http://steamcommunity.com/id/theKalgar" class="steam"><img src="images/steam-64.png" alt="Steam"></a></li> -->
+			</nav>
+		</div>
+	</div>
+
+</section>
+
+<section id="subheader">
+	
+</section>
+
+<section id="content">
+	
+	<div class="wrapper">
+		
+		<div ng-view></div>	
+
+	</div>
+
+</section>
+
+<!-- Page wrap -->
+</div>
+
+<section id="footer">
+			
+	<div class="wrapper">
+		
+		<p>Si vous appréciez mon projet vous pouvez me payer un café ;)<br /><a href="https://flattr.com/submit/auto?user_id=kalgar&url=http%3A%2F%2Fkalgar.net" target="_blank"><img src="//api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0"></a></p>
+
+	</div>
+
+</section>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3277488-13', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

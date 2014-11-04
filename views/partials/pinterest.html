@@ -1,0 +1,33 @@
+<div ng-controller="PinterestCtrl">
+	<section id="subheader">
+		
+		<div class="wrapper">
+			<div class="pinterest">
+
+				<div class="col-1-2">
+					<h2>Mes derniers pins</h2>	
+				</div>
+				<div class="col-1-2">
+					<h3><a href="http://pinterest.com/kalgar92">pinterest.com/kalgar92</a></h3>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="content">
+
+		<div class="wrapper">
+			
+			<div ng-repeat="pin in feeds">
+				
+				<div class="content pinterest-content">
+					<a ng-href="{{pin.link}}">
+						<div ng-bind-html="pin.content"></div>
+				</div>
+			</div>			
+
+		</div>
+
+	</section>
+</div>
