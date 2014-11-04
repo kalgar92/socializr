@@ -1,6 +1,9 @@
 'use strict';
 
-var App = angular.module('KalgarNet', ['ngRoute', 'ngSanitize']);
+var App = angular.module('KalgarNet',
+	['ui.router',
+	'ngSanitize']
+);
 
 App.controller("PinterestCtrl", ['$scope','FeedService', function ($scope,Feed) {    
     Feed.parseFeed("http://www.pinterest.com/kalgar92/feed.rss").success(function(data){

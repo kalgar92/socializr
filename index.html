@@ -5,12 +5,12 @@
 	<meta charset="utf-8">
 	
 	<!-- CSS  -->
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Ruluko' rel='stylesheet' type='text/css'>
 	
 	<!-- JS -->
 	<script src="vendor/angular/angular.js"></script>
-	<script src="vendor/angular-route/angular-route.min.js"></script>
+	<script src="vendor/ui-router/ui-router.js"></script>
 	<script src="vendor/angular-sanitize/angular-sanitize.min.js"></script>
 
 	<!-- ANGULAR -->
@@ -28,20 +28,20 @@
 
 	<div class="wrapper">
 		<div id="description">
-			<a href="/">
+			<a ui-sref="home">
 				<img src="images/logo.png" alt="Kalgar" class="portfolio-image">
 				<h1>Kalgar.net</h1>
 			</a>
 		</div>
 		<div id="navigation">
 			<nav id="social">
-				<li><a href="/deviantart" class="deviantart"><img src="images/deviantart-64.png" alt="Deviantart"></a></li>
-				<li><a href="/tumblr" class="tumblr"><img src="images/tumblr-64.png" alt="Tumblr"></a></li>
-				<li><a href="/facebook" class="facebook"><img src="images/facebook-64.png" alt="facebook"></a></li>
-				<li><a href="/github" class="github"><img src="images/github-64.png" alt="github"></a></li>
-				<li><a href="/twitch" class="twitch"><img src="images/twitch-64.png" alt="twitch"></a></li>
-				<li><a href="/pinterest" class="pinterest"><img src="images/pinterest-64.png" alt="pinterest"></a></li>
-				<li><a href="/grooveshark" class="grooveshark"><img src="images/grooveshark-64.png" alt="grooveshark"></a></li>
+				<li><a ui-sref="deviantart" class="deviantart"><img src="images/deviantart-64.png" alt="Deviantart"></a></li>
+				<li><a ui-sref="tumblr" class="tumblr"><img src="images/tumblr-64.png" alt="Tumblr"></a></li>
+				<li><a ui-sref="facebook" class="facebook"><img src="images/facebook-64.png" alt="facebook"></a></li>
+				<li><a ui-sref="github" class="github"><img src="images/github-64.png" alt="github"></a></li>
+				<li><a ui-sref="twitch" class="twitch"><img src="images/twitch-64.png" alt="twitch"></a></li>
+				<li><a ui-sref="pinterest" class="pinterest"><img src="images/pinterest-64.png" alt="pinterest"></a></li>
+				<li><a ui-sref="grooveshark" class="grooveshark"><img src="images/grooveshark-64.png" alt="grooveshark"></a></li>
 				<!-- <li><a href="http://steamcommunity.com/id/theKalgar" class="steam"><img src="images/steam-64.png" alt="Steam"></a></li> -->
 			</nav>
 		</div>
@@ -57,7 +57,7 @@
 	
 	<div class="wrapper">
 		
-		<div ng-view></div>	
+		<div ui-view></div>	
 
 	</div>
 
@@ -70,7 +70,7 @@
 			
 	<div class="wrapper">
 		
-		<p>Si vous appréciez mon projet vous pouvez me payer un café ;)<br /><a href="https://flattr.com/submit/auto?user_id=kalgar&url=http%3A%2F%2Fkalgar.net" target="_blank"><img src="//api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0"></a></p>
+
 
 	</div>
 
